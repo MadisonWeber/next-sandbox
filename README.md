@@ -1,1 +1,1 @@
-\*\* Sandbox to play around with next.js
+## Sandbox to play around with next.js
