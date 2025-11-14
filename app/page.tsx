@@ -14,7 +14,7 @@ const bodyContainerClass = 'p-4 w-full min-h-60 bg-gray-700 rounded-lg text-gray
 
 export default function Home() {
   return (
-    <div className="flex items-center justify-center min-h-100 h-full border-red flex flex-row items-center gap-x-8 p-6">
+    <div className="flex items-center justify-center min-h-100 h-full border-red flex flex-row items-center gap-x-8 p-0">
       <div className={clsx('flex-1/4', boxClass)}>
         <div className={clsx(headerClass)}>
           <Brain

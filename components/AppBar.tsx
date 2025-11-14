@@ -3,6 +3,7 @@
 import React from 'react';
 import { Home, ShoppingCart } from 'lucide-react';
 import Link from 'next/link';
+import Cart from './Cart';
 
 const AppBar = () => {
   return (
@@ -36,16 +37,7 @@ const AppBar = () => {
       >
         Contact
       </Link>
-      <button
-        onClick={() => console.log('open the cart')}
-        className="text-md cursor-pointer font-semibold text-black border p-2 rounded-md flex flex-row items-center gap-x-2 border-gray-400 bg-blue-950"
-      >
-        <ShoppingCart
-          className="text-white"
-          height={18}
-          width={18}
-        />
-      </button>
+      <Cart />
     </nav>
   );
 };
