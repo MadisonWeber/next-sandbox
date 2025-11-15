@@ -16,7 +16,7 @@ export default function RootLayout({
     <html lang="en">
       <body className="bg-gray-900 min-h-screen">
         <AppBar />
-        <div className="w-full h-screen pt-30 p-10 bg-gray-900">{children}</div>
+        <div className="w-full h-screen pt-30 p-4 lg:px-10  bg-gray-900">{children}</div>
       </body>
     </html>
   );
