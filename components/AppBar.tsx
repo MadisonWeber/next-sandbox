@@ -1,16 +1,17 @@
 'use client';
-
-import React from 'react';
-import { Home, ShoppingCart } from 'lucide-react';
+import { Home } from 'lucide-react';
 import Link from 'next/link';
 import Cart from './Cart';
 
+const linkClass =
+  'text-md font-regular text-white p-2 rounded-md hover:bg-slate-700/30 active:bg-slate-700 transition duration-200';
+
 const AppBar = () => {
   return (
-    <nav className="w-full h-20 bg-black border-black flex flex-row items-center justify-between px-4 gap-x-6 fixed top-0 z-50">
+    <nav className="w-full h-20 bg-slate-900 border-black flex flex-row items-center justify-between px-4 gap-x-6 sm:gap-x-8 fixed top-0 z-50">
       <Link
         href="/"
-        className="flex gap-x-2 items-center text-blue-700 bg-slate-800/50 hover:bg-slate-800/80 p-2 rounded-md border-0 transition 200ms border-gray-300"
+        className={`${linkClass} flex gap-x-2 items-center`}
       >
         <Home
           height={18}
@@ -19,21 +20,22 @@ const AppBar = () => {
         />
         <span className="text-white">Home</span>
       </Link>
+      <div className="ml-auto" />
       <Link
         href="/catalogue"
-        className="text-md font-semibold text-white ml-auto"
+        className={linkClass}
       >
         Catalogue
       </Link>
       <Link
         href="/about"
-        className="text-md font-semibold"
+        className={linkClass}
       >
         About Us
       </Link>
       <Link
         href="/contact"
-        className="text-md font-semibold"
+        className={linkClass}
       >
         Contact
       </Link>
